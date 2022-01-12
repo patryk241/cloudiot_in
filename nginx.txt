@@ -1,0 +1,614 @@
+login as: AdminLIN
+AdminLIN@20.127.137.71's password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-1025-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Jan 12 18:30:14 UTC 2022
+
+  System load:  0.65              Processes:             120
+  Usage of /:   4.6% of 28.90GB   Users logged in:       0
+  Memory usage: 6%                IPv4 address for eth0: 10.2.0.4
+  Swap usage:   0%
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+AdminLIN@patryk-wisniewski:~$ sudo apt-get update; \
+> sudo apt-get install -y apt-transport-https && \
+> sudp apt-get update && \
+> sudo apt-get install -y dotnet-sdk-6.0
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1468 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1135 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [291 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [694 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [99.0 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [892 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [205 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9108 B]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [643 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [196 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [91.7 kB]
+Get:23 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [19.9 kB]
+Get:24 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:25 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.8 kB]
+Get:26 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [6928 B]
+Get:27 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:28 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [42.0 kB]
+Get:29 http://azure.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [10.0 kB]
+Get:30 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [864 B]
+Get:31 http://azure.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:32 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.5 kB]
+Get:33 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.4 kB]
+Get:34 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [672 B]
+Get:35 http://azure.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:36 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [115 kB]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.8 kB]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [4948 B]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [536 B]
+Fetched 21.3 MB in 4s (5046 kB/s)
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 4680 B of archives.
+After this operation, 162 kB of additional disk space will be used.
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 apt-transport-https all 2.0.6 [4680 B]
+Fetched 4680 B in 0s (177 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 59747 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_2.0.6_all.deb ...
+Unpacking apt-transport-https (2.0.6) ...
+Setting up apt-transport-https (2.0.6) ...
+
+Command 'sudp' not found, did you mean:
+
+  command 'sup' from deb sup (20100519-1build1)
+  command 'sudo' from deb sudo (1.8.31-1ubuntu1.2)
+  command 'sudo' from deb sudo-ldap (1.8.31-1ubuntu1.2)
+  command 'sfdp' from deb graphviz (2.42.2-3build2)
+
+Try: sudo apt install <deb name>
+
+AdminLIN@patryk-wisniewski:~$ dotnet new mvc -n PatrykProject
+dotnet: command not found
+AdminLIN@patryk-wisniewski:~$ dotnet --version
+dotnet: command not found
+AdminLIN@patryk-wisniewski:~$ sudo apt-get update; sudo apt-get install -y apt-transport-https && sudp apt-get update && sudo apt-get install -y dotnet-sdk-6.0
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version (2.0.6).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+
+Command 'sudp' not found, did you mean:
+
+  command 'sup' from deb sup (20100519-1build1)
+  command 'sudo' from deb sudo (1.8.31-1ubuntu1.2)
+  command 'sudo' from deb sudo-ldap (1.8.31-1ubuntu1.2)
+  command 'sfdp' from deb graphviz (2.42.2-3build2)
+
+Try: sudo apt install <deb name>
+
+AdminLIN@patryk-wisniewski:~$ sudo apt-get update; sudo apt-get install -y apt-transport-https && sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version (2.0.6).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package dotnet-sdk-6.0
+E: Couldn't find any package by glob 'dotnet-sdk-6.0'
+E: Couldn't find any package by regex 'dotnet-sdk-6.0'
+AdminLIN@patryk-wisniewski:~$ dotnet --version
+dotnet: command not found
+AdminLIN@patryk-wisniewski:~$ sudo apt-get update; \
+>   sudo apt-get install -y apt-transport-https && \
+>   sudo apt-get update && \
+>   sudo apt-get install -y dotnet-sdk-6.0
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version (2.0.6).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package dotnet-sdk-6.0
+E: Couldn't find any package by glob 'dotnet-sdk-6.0'
+E: Couldn't find any package by regex 'dotnet-sdk-6.0'
+AdminLIN@patryk-wisniewski:~$ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+--2022-01-12 18:38:05--  https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+Resolving packages.microsoft.com (packages.microsoft.com)... 13.90.21.104
+Connecting to packages.microsoft.com (packages.microsoft.com)|13.90.21.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3124 (3.1K) [application/octet-stream]
+Saving to: ‘packages-microsoft-prod.deb’
+
+packages-microsoft-prod.deb 100%[===========================================>]   3.05K  --.-KB/s    in 0s
+
+2022-01-12 18:38:06 (488 MB/s) - ‘packages-microsoft-prod.deb’ saved [3124/3124]
+
+AdminLIN@patryk-wisniewski:~$ sudo dpkg -i packages-microsoft-prod.deb
+Selecting previously unselected package packages-microsoft-prod.
+(Reading database ... 59751 files and directories currently installed.)
+Preparing to unpack packages-microsoft-prod.deb ...
+Unpacking packages-microsoft-prod (1.0-ubuntu20.04.1) ...
+Setting up packages-microsoft-prod (1.0-ubuntu20.04.1) ...
+AdminLIN@patryk-wisniewski:~$ rm packages-microsoft-prod.deb
+AdminLIN@patryk-wisniewski:~$ sudo apt-get update; \
+>   sudo apt-get install -y apt-transport-https && \
+>   sudo apt-get update && \
+>   sudo apt-get install -y dotnet-sdk-6.0
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Get:4 https://packages.microsoft.com/ubuntu/20.04/prod focal InRelease [10.5 kB]
+Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease
+Get:6 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 Packages [122 kB]
+Fetched 132 kB in 1s (213 kB/s)
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version (2.0.6).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 https://packages.microsoft.com/ubuntu/20.04/prod focal InRelease
+Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 dotnet-apphost-pack-6.0 dotnet-host dotnet-hostfxr-6.0
+  dotnet-runtime-6.0 dotnet-runtime-deps-6.0 dotnet-targeting-pack-6.0 netstandard-targeting-pack-2.1
+The following NEW packages will be installed:
+  aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 dotnet-apphost-pack-6.0 dotnet-host dotnet-hostfxr-6.0
+  dotnet-runtime-6.0 dotnet-runtime-deps-6.0 dotnet-sdk-6.0 dotnet-targeting-pack-6.0
+  netstandard-targeting-pack-2.1
+0 upgraded, 10 newly installed, 0 to remove and 3 not upgraded.
+Need to get 116 MB of archives.
+After this operation, 483 MB of additional disk space will be used.
+Get:1 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-host amd64 6.0.1-1 [55.7 kB]
+Get:2 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-hostfxr-6.0 amd64 6.0.1-1 [142 kB]
+Get:3 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-runtime-deps-6.0 amd64 6.0.1-1 [2804 B]
+Get:4 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-runtime-6.0 amd64 6.0.1-1 [23.0 MB]
+Get:5 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 aspnetcore-runtime-6.0 amd64 6.0.1-1 [6597 kB]
+Get:6 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-targeting-pack-6.0 amd64 6.0.1-1 [2125 kB]
+Get:7 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 aspnetcore-targeting-pack-6.0 amd64 6.0.0-1 [1306 kB]
+Get:8 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-apphost-pack-6.0 amd64 6.0.1-1 [3505 kB]
+Get:9 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 netstandard-targeting-pack-2.1 amd64 2.1.0-1 [1476 kB]
+Get:10 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 dotnet-sdk-6.0 amd64 6.0.101-1 [78.1 MB]
+Fetched 116 MB in 3s (37.6 MB/s)
+Selecting previously unselected package dotnet-host.
+(Reading database ... 59759 files and directories currently installed.)
+Preparing to unpack .../0-dotnet-host_6.0.1-1_amd64.deb ...
+Unpacking dotnet-host (6.0.1-1) ...
+Selecting previously unselected package dotnet-hostfxr-6.0.
+Preparing to unpack .../1-dotnet-hostfxr-6.0_6.0.1-1_amd64.deb ...
+Unpacking dotnet-hostfxr-6.0 (6.0.1-1) ...
+Selecting previously unselected package dotnet-runtime-deps-6.0.
+Preparing to unpack .../2-dotnet-runtime-deps-6.0_6.0.1-1_amd64.deb ...
+Unpacking dotnet-runtime-deps-6.0 (6.0.1-1) ...
+Selecting previously unselected package dotnet-runtime-6.0.
+Preparing to unpack .../3-dotnet-runtime-6.0_6.0.1-1_amd64.deb ...
+Unpacking dotnet-runtime-6.0 (6.0.1-1) ...
+Selecting previously unselected package aspnetcore-runtime-6.0.
+Preparing to unpack .../4-aspnetcore-runtime-6.0_6.0.1-1_amd64.deb ...
+Unpacking aspnetcore-runtime-6.0 (6.0.1-1) ...
+Selecting previously unselected package dotnet-targeting-pack-6.0.
+Preparing to unpack .../5-dotnet-targeting-pack-6.0_6.0.1-1_amd64.deb ...
+Unpacking dotnet-targeting-pack-6.0 (6.0.1-1) ...
+Selecting previously unselected package aspnetcore-targeting-pack-6.0.
+Preparing to unpack .../6-aspnetcore-targeting-pack-6.0_6.0.0-1_amd64.deb ...
+Unpacking aspnetcore-targeting-pack-6.0 (6.0.0-1) ...
+Selecting previously unselected package dotnet-apphost-pack-6.0.
+Preparing to unpack .../7-dotnet-apphost-pack-6.0_6.0.1-1_amd64.deb ...
+Unpacking dotnet-apphost-pack-6.0 (6.0.1-1) ...
+Selecting previously unselected package netstandard-targeting-pack-2.1.
+Preparing to unpack .../8-netstandard-targeting-pack-2.1_2.1.0-1_amd64.deb ...
+Unpacking netstandard-targeting-pack-2.1 (2.1.0-1) ...
+Selecting previously unselected package dotnet-sdk-6.0.
+Preparing to unpack .../9-dotnet-sdk-6.0_6.0.101-1_amd64.deb ...
+Unpacking dotnet-sdk-6.0 (6.0.101-1) ...
+Setting up dotnet-host (6.0.1-1) ...
+Setting up dotnet-apphost-pack-6.0 (6.0.1-1) ...
+Setting up netstandard-targeting-pack-2.1 (2.1.0-1) ...
+Setting up dotnet-targeting-pack-6.0 (6.0.1-1) ...
+Setting up dotnet-runtime-deps-6.0 (6.0.1-1) ...
+Setting up aspnetcore-targeting-pack-6.0 (6.0.0-1) ...
+Setting up dotnet-hostfxr-6.0 (6.0.1-1) ...
+Setting up dotnet-runtime-6.0 (6.0.1-1) ...
+Setting up aspnetcore-runtime-6.0 (6.0.1-1) ...
+Setting up dotnet-sdk-6.0 (6.0.101-1) ...
+This software may collect information about you and your use of the software, and send that to Microsoft.
+Please visit http://aka.ms/dotnet-cli-eula for more information.
+Welcome to .NET!
+---------------------
+Learn more about .NET: https://aka.ms/dotnet-docs
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+Configuring...
+--------------
+A command is running to populate your local package cache to improve restore speed and enable offline access. This command takes up to one minute to complete and only runs once.
+Processing triggers for man-db (2.9.1-1) ...
+AdminLIN@patryk-wisniewski:~$ dotnet -version
+
+Welcome to .NET 6.0!
+---------------------
+SDK Version: 6.0.101
+
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate run 'dotnet dev-certs https --trust' (Windows and macOS only).
+Learn about HTTPS: https://aka.ms/dotnet-https
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+Could not execute because the specified command or file was not found.
+Possible reasons for this include:
+  * You misspelled a built-in dotnet command.
+  * You intended to execute a .NET program, but dotnet--version does not exist.
+  * You intended to run a global tool, but a dotnet-prefixed executable with this name could not be found on the PATH.
+AdminLIN@patryk-wisniewski:~$ dotnet --version
+6.0.101
+AdminLIN@patryk-wisniewski:~$ sudo apt update
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 https://packages.microsoft.com/ubuntu/20.04/prod focal InRelease
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+AdminLIN@patryk-wisniewski:~$ sudo apt install nginx
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0 libjpeg-turbo8 libjpeg8
+  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+  libwebp6 libxpm4 nginx-common nginx-core
+Suggested packages:
+  libgd-tools fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0 libjpeg-turbo8 libjpeg8
+  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+  libwebp6 libxpm4 nginx nginx-common nginx-core
+0 upgraded, 17 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2432 kB of archives.
+After this operation, 7891 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.1 [117 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+Get:6 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libjbig0 amd64 2.1-3.1build1 [26.7 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.20.04.1 [185 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.2 [162 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libxpm4 amd64 1:3.5.12-1 [34.0 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgd3 amd64 2.2.5-5.2ubuntu2.1 [118 kB]
+Get:11 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx-common all 1.18.0-0ubuntu1.2 [37.5 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-0ubuntu1.2 [14.4 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-0ubuntu1.2 [12.7 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-mail amd64 1.18.0-0ubuntu1.2 [42.5 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-stream amd64 1.18.0-0ubuntu1.2 [67.3 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx-core amd64 1.18.0-0ubuntu1.2 [425 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx all 1.18.0-0ubuntu1.2 [3620 B]
+Fetched 2432 kB in 0s (22.4 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package fonts-dejavu-core.
+(Reading database ... 63757 files and directories currently installed.)
+Preparing to unpack .../00-fonts-dejavu-core_2.37-1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../01-fontconfig-config_2.13.1-2ubuntu3_all.deb ...
+Unpacking fontconfig-config (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../02-libfontconfig1_2.13.1-2ubuntu3_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../03-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../04-libjpeg8_8c-2ubuntu8_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../05-libjbig0_2.1-3.1build1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1build1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../06-libwebp6_0.6.1-2ubuntu0.20.04.1_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../07-libtiff5_4.1.0+git191117-2ubuntu0.20.04.2_amd64.deb ...
+Unpacking libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.2) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../08-libxpm4_1%3a3.5.12-1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../09-libgd3_2.2.5-5.2ubuntu2.1_amd64.deb ...
+Unpacking libgd3:amd64 (2.2.5-5.2ubuntu2.1) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../10-nginx-common_1.18.0-0ubuntu1.2_all.deb ...
+Unpacking nginx-common (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../11-libnginx-mod-http-image-filter_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-http-image-filter (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../12-libnginx-mod-http-xslt-filter_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../13-libnginx-mod-mail_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-mail (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../14-libnginx-mod-stream_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-stream (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../15-nginx-core_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking nginx-core (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../16-nginx_1.18.0-0ubuntu1.2_all.deb ...
+Unpacking nginx (1.18.0-0ubuntu1.2) ...
+Setting up libxpm4:amd64 (1:3.5.12-1) ...
+Setting up nginx-common (1.18.0-0ubuntu1.2) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Setting up libjbig0:amd64 (2.1-3.1build1) ...
+Setting up libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.2) ...
+Setting up libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Setting up fonts-dejavu-core (2.37-1) ...
+Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+Setting up libnginx-mod-mail (1.18.0-0ubuntu1.2) ...
+Setting up fontconfig-config (2.13.1-2ubuntu3) ...
+Setting up libnginx-mod-stream (1.18.0-0ubuntu1.2) ...
+Setting up libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.2) ...
+Setting up libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Setting up libgd3:amd64 (2.2.5-5.2ubuntu2.1) ...
+Setting up libnginx-mod-http-image-filter (1.18.0-0ubuntu1.2) ...
+Setting up nginx-core (1.18.0-0ubuntu1.2) ...
+Setting up nginx (1.18.0-0ubuntu1.2) ...
+Processing triggers for ufw (0.36-6ubuntu1) ...
+Processing triggers for systemd (245.4-4ubuntu3.14) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+AdminLIN@patryk-wisniewski:~$ sudo service nginx restart
+AdminLIN@patryk-wisniewski:~$ sudo systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-01-12 18:46:07 UTC; 56s ago
+       Docs: man:nginx(8)
+    Process: 5789 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SU>
+    Process: 5790 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 5792 (nginx)
+      Tasks: 3 (limit: 4710)
+     Memory: 3.0M
+     CGroup: /system.slice/nginx.service
+             ├─5792 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             ├─5793 nginx: worker process
+             └─5794 nginx: worker process
+
+Jan 12 18:46:07 patryk-wisniewski systemd[1]: Starting A high performance web server and a reverse proxy server>
+Jan 12 18:46:07 patryk-wisniewski systemd[1]: Started A high performance web server and a reverse proxy server.
+...skipping...
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-01-12 18:46:07 UTC; 56s ago
+       Docs: man:nginx(8)
+    Process: 5789 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SU>
+    Process: 5790 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 5792 (nginx)
+      Tasks: 3 (limit: 4710)
+     Memory: 3.0M
+     CGroup: /system.slice/nginx.service
+             ├─5792 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             ├─5793 nginx: worker process
+             └─5794 nginx: worker process
+
+Jan 12 18:46:07 patryk-wisniewski systemd[1]: Starting A high performance web server and a reverse proxy server>
+Jan 12 18:46:07 patryk-wisniewski systemd[1]: Started A high performance web server and a reverse proxy server.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-16/16 (END)...skipping...
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-01-12 18:46:07 UTC; 56s ago
+       Docs: man:nginx(8)
+    Process: 5789 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SU>
+    Process: 5790 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 5792 (nginx)
+      Tasks: 3 (limit: 4710)
+     Memory: 3.0M
+     CGroup: /system.slice/nginx.service
+             ├─5792 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             ├─5793 nginx: worker process
+             └─5794 nginx: worker process
+
+Jan 12 18:46:07 patryk-wisniewski systemd[1]: Starting A high performance web server and a reverse proxy server>
+Jan 12 18:46:07 patryk-wisniewski systemd[1]: Started A high performance web server and a reverse proxy server.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+AdminLIN@patryk-wisniewski:~$ sudo ufw allow ssh
+Rules updated
+Rules updated (v6)
+AdminLIN@patryk-wisniewski:~$ sudo afw allow nginx
+sudo: afw: command not found
+AdminLIN@patryk-wisniewski:~$ sudo ufw allow nginx
+ERROR: Could not find a profile matching 'nginx'
+AdminLIN@patryk-wisniewski:~$ sudo  ufw allow 'Nginx Full'
+Rules updated
+Rules updated (v6)
+AdminLIN@patryk-wisniewski:~$ sudo ufw enable
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
+Firewall is active and enabled on system startup
+AdminLIN@patryk-wisniewski:~$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+Nginx Full                 ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+Nginx Full (v6)            ALLOW       Anywhere (v6)
+
+AdminLIN@patryk-wisniewski:~$ sudo ufw allow 80
+Rule added
+Rule added (v6)
+AdminLIN@patryk-wisniewski:~$ sudo ufw allow 443
+Rule added
+Rule added (v6)
+AdminLIN@patryk-wisniewski:~$ cd /var/www
+AdminLIN@patryk-wisniewski:/var/www$ sudo chmod 777 /var/www/
+AdminLIN@patryk-wisniewski:/var/www$ ls
+html
+AdminLIN@patryk-wisniewski:/var/www$ mkdir websites
+AdminLIN@patryk-wisniewski:/var/www$ ls
+html  websites
+AdminLIN@patryk-wisniewski:/var/www$ cd websites/
+AdminLIN@patryk-wisniewski:/var/www/websites$ dotnet new mvc -n MojaStrona
+The template "ASP.NET Core Web App (Model-View-Controller)" was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/aspnetcore/6.0-third-party-notices for details.
+
+Processing post-creation actions...
+Running 'dotnet restore' on /var/www/websites/MojaStrona/MojaStrona.csproj...
+  Determining projects to restore...
+  Restored /var/www/websites/MojaStrona/MojaStrona.csproj (in 130 ms).
+Restore succeeded.
+
+AdminLIN@patryk-wisniewski:/var/www/websites$ cd MojaStrona/
+AdminLIN@patryk-wisniewski:/var/www/websites/MojaStrona$ ls
+Controllers  MojaStrona.csproj  Properties  appsettings.Development.json  obj
+Models       Program.cs         Views       appsettings.json              wwwroot
+AdminLIN@patryk-wisniewski:/var/www/websites/MojaStrona$ dotnet run
+Building...
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+      No XML encryptor configured. Key {d2d3816c-a168-43ad-a746-148947cd01a2} may be persisted to storage in unencrypted form.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7244
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5279
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /var/www/websites/MojaStrona/
+^Cinfo: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+AdminLIN@patryk-wisniewski:/var/www/websites/MojaStrona$
