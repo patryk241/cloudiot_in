@@ -1,0 +1,27 @@
+@model User
+
+@{
+    ViewBag.Title = $"Chat app - {Model?.Login}";
+    Layout = "_Layout";
+}
+
+<p>
+    twoja nazwa to: <span id="user-login">@Model?.Login</span>
+</p>
+
+<div class="row">
+    <div class="col-md-8">
+        <input id="chat-message" class="form-control" placeholder="Napisz wiadomość"/>
+    </div>
+    <div class="col-md-4">
+        <button id="btn-send" class="btn btn-success w-100">Wyślij</button>
+    </div>
+
+    <div class="col-12">
+        <ul id="chat-container"></ul>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
